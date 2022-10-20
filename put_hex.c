@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-
 
 static int	nibble(unsigned long num, int index)
 {
