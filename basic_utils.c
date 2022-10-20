@@ -24,13 +24,3 @@ int	ft_putstr(char *s)
 		return (0);
 	return (write(1, s, ft_strlen(s)));
 }
-
-size_t	ft_strlen(const char *s)
-{
-	const char	*start;
-
-	start = s;
-	while (*s)
-		s++;
-	return (s - start);
-}
