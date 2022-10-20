@@ -30,14 +30,14 @@ char	*gnl_ft_strjoin(char const *s1, char const *s2, int flag)
 	int		l2;
 	char	*new;
 
-	l1 = ft_strlen(s1);
-	l2 = ft_strlen(s2);
+	l1 = gnl_ft_strlen(s1);
+	l2 = gnl_ft_strlen(s2);
 	new = malloc(sizeof(char) * (1 + l1 + l2));
 	if (new == NULL)
 		return (NULL);
 	if (s1 != NULL)
-		ft_memmove(new, s1, l1);
-	ft_memmove(new + l1, s2, l2);
+		gnl_ft_memmove(new, s1, l1);
+	gnl_ft_memmove(new + l1, s2, l2);
 	*(new + l1 + l2) = '\0';
 	if (flag == 1 && s1 != NULL)
 		free((void *)s1);
