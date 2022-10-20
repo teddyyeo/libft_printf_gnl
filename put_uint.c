@@ -10,9 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-
 
 static int			numlen(unsigned int nb);
 static unsigned int	power(unsigned int n);
